@@ -1,0 +1,3 @@
+generated-by: Ebean kotlin-querybean-generator
+entity-packages: com.github.valhryn.rpgbot.domain
+

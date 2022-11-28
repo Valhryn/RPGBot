@@ -1,3 +1,5 @@
-#which files?
-
-**/config.yaml
+config.yaml
+.gradle
+.idea
+build
+gradle

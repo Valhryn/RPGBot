@@ -1,6 +1,7 @@
 package com.github.valhryn.rpgbot
 
 import com.github.valhryn.rpgbot.systemCharacters.characterDND5
+import io.ebean.Model
 import javax.persistence.Entity
 
 //class Campaigns {
@@ -15,7 +16,7 @@ import javax.persistence.Entity
 //}
 
 @Entity
-class Campaign(name : String, chosenSystem : String) : BaseModel() {
+class Campaign(name : String, chosenSystem : String) : Model() {
 
     var gameMaster: String = name
     var system: String = chosenSystem

@@ -19,7 +19,7 @@ class CampaignExtension : Extension() {
 
     override suspend fun setup() {
         publicSlashCommand(::SlapArgs) {
-            name = "campaignsetup"
+            name = "campaign setup"
             description = "Sets up a campaign"
 
             guild(Snowflake(config.discord.guildId))

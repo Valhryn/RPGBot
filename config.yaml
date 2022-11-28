@@ -1,7 +1,0 @@
-discord:
-  token: MTAxOTA0NTE3MDk3NDU2MDMyNw.GVecUN.Qm0QFiFH8ISpnXBgMgb4gls7PbBM0nYoDV_1tk
-  guildId: 1019046138621464696
-database:
-  username: blank
-  password: blank
-  url: jdbc:h2:mem:myapp

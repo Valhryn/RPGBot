@@ -1,8 +1,10 @@
 package com.github.valhryn.rpgbot
 
-import com.github.valhryn.rpgbot.systemCharacters.characterDND5
+import com.github.valhryn.rpgbot.domain.Base
+import com.github.valhryn.rpgbot.systemCharacters.CharacterDND5
 import io.ebean.Model
 import javax.persistence.Entity
+import javax.persistence.OneToMany
 
 //class Campaigns {
 //    private int dmID;
@@ -16,15 +18,13 @@ import javax.persistence.Entity
 //}
 
 @Entity
-class Campaign(name : String, chosenSystem : String) : Model() {
+class Campaign(name : String, chosenSystem : String) : Base() {
 
     var gameMaster: String = name
     var system: String = chosenSystem
-    var playerList = mutableListOf<characterDND5>()
 
-    fun addPlayer(newPlayer : characterDND5){
-        playerList.add(newPlayer)
-    }
+    @OneToMany(mappedBy="Campaign")
+    var players: MutableList<CharacterDND5> = mutableListOf()
 
     //How to add system-based methods. Maybe more tables? Player-based methods? 1 class "System" (If yes, find file format)
 }

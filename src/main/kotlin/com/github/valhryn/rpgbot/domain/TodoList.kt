@@ -1,9 +1,7 @@
 package com.github.valhryn.rpgbot.domain
 
-import com.github.valhryn.rpgbot.domain.query.QTodoList
-import io.ebean.Finder
+import com.github.valhryn.rpgbot.models.Base
 import io.ebean.annotation.Length
-import kotlinx.coroutines.selects.select
 import javax.persistence.Entity
 import javax.persistence.Table
 

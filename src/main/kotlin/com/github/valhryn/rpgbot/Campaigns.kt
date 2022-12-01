@@ -1,8 +1,7 @@
 package com.github.valhryn.rpgbot
 
-import com.github.valhryn.rpgbot.domain.Base
-import com.github.valhryn.rpgbot.systemCharacters.CharacterDND5
-import io.ebean.Model
+import com.github.valhryn.rpgbot.models.Base
+import com.github.valhryn.rpgbot.models.character.CharacterDND5
 import javax.persistence.Entity
 import javax.persistence.OneToMany
 

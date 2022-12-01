@@ -1,4 +1,4 @@
-package com.github.valhryn.rpgbot.domain
+package com.github.valhryn.rpgbot.models
 
 import io.ebean.Model
 import io.ebean.annotation.WhenCreated

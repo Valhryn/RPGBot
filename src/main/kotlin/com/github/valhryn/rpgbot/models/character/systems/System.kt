@@ -6,18 +6,15 @@ import io.ebean.annotation.DbEnumType
 import io.ebean.annotation.DbEnumValue
 import javax.persistence.Column
 import javax.persistence.OneToOne
+import javax.persistence.Table
 import kotlin.reflect.KClass
+import kotlin.reflect.full.findAnnotation
 
 /**
  * All system types.
  */
 enum class SystemTypes(val system: KClass<out CharacterSystem>) {
-    DND5(DND5System::class);
-
-    @DbEnumValue(storage = DbEnumType.VARCHAR)
-    open fun getValue(): String? {
-        return
-    }
+    DND5(DND5System::class)
 }
 
 /**
